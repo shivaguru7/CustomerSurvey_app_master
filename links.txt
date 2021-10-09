@@ -1,0 +1,28 @@
+<head>
+<style>
+a
+{
+       text-decoration:none;
+       color:red;
+        font-size:9pt;
+       font-family:verdana;
+       font-weight:bold;
+
+}
+a:hover
+{
+
+  color:blue;
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<%@page  import="java.sql.*,mybean.*"%>
+<%@page errorPage="err.jsp"%>
+<center><font size=6pt color=#000077 face=verdana><b><i>Solutions List</i></b></font></center>
+&nbsp;&nbsp;<font style="font-size=9pt;font-family:verdana;color:orange"><strong>Administrator :<%=session.getValue("auname")%></strong></font>
+<table width=98% >
+<tr><td align=right><a href="reports.html">BACK</a><b>&nbsp;|&nbsp;</b><a href="admin_form.html"  ><b>HOME</b></a><b>&nbsp;|&nbsp;</b><a href="signout.jsp"><b>LOGOUT</b></a> </td></tr>
+</table>
